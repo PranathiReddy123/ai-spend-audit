@@ -148,6 +148,7 @@ const currentSpend =
 
         <Bar
           dataKey="amount"
+          fill="#22c55e"
           radius={[10, 10, 0, 0]}
         />
 
