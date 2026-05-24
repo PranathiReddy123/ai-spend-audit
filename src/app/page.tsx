@@ -5,6 +5,36 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-black text-white">
 
+      <nav className="border-b border-zinc-800">
+
+  <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+
+    <h1 className="text-xl font-bold">
+      AI Spend Audit
+    </h1>
+
+    <div className="flex gap-4">
+
+      <a
+        href="/audit"
+        className="text-sm text-gray-300 hover:text-white"
+      >
+        Audit
+      </a>
+
+      <a
+        href="/results"
+        className="text-sm text-gray-300 hover:text-white"
+      >
+        Results
+      </a>
+
+    </div>
+
+  </div>
+
+</nav>
+
       <section className="px-6 py-24">
 
         <div className="max-w-6xl mx-auto">
@@ -83,6 +113,17 @@ export default function HomePage() {
         </div>
 
       </section>
+
+
+      <footer className="border-t border-zinc-800 mt-24">
+
+  <div className="max-w-6xl mx-auto px-6 py-10 text-sm text-gray-500">
+
+    Built for modern engineering teams optimizing AI tooling costs.
+
+  </div>
+
+</footer>
 
     </main>
   );
