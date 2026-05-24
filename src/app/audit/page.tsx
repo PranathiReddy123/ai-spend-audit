@@ -71,12 +71,19 @@ export default function AuditPage() {
             />
           </div>
 
-          <button
-          onClick={() => router.push("/results")}
-          className="w-full bg-white text-black py-4 rounded-xl font-semibold hover:opacity-90">
-           Generate Audit
+          <button onClick={() => {
+            const auditData = {tool,plan,seats,};
+            localStorage.setItem("auditData",JSON.stringify(auditData));
+            router.push("/results");
           
+          }}
+          
+          className="w-full bg-white text-black py-4 rounded-xl font-semibold hover:opacity-90">
+            Generate Audit
+            
           </button>
+
+          
 
         </div>
 
