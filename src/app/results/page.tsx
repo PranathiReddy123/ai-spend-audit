@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 
+import { pricing } from "@/lib/pricing";
+
 export default function ResultsPage() {
 
   const [data, setData] = useState<any>(null);
@@ -24,12 +26,17 @@ export default function ResultsPage() {
     );
   }
 
-  const currentSpend =
-    data.plan === "plus"
-      ? 20 * data.seats
-      : data.plan === "team"
-      ? 30 * data.seats
-      : 60 * data.seats;
+const toolPricing =
+  pricing[data.tool as keyof typeof pricing];
+
+const monthlyPrice =
+  toolPricing?.[
+    data.plan as keyof typeof toolPricing
+  ] || 20;
+
+const currentSpend =
+  monthlyPrice * data.seats;
+
 
   const savings =
     data.plan === "team" && data.seats <= 2
@@ -92,8 +99,10 @@ export default function ResultsPage() {
           <p className="text-gray-300 mt-4 leading-relaxed">
 
             {savings > 0
-              ? "You may be overspending on team plans for a smaller seat count. Consider downgrading to individual plans."
-              : "Your current setup appears reasonably optimized based on your selected configuration."}
+
+             ? `Your ${data.tool} configuration appears over-provisioned for your current seat count. Downgrading plans or consolidating licenses could reduce spend significantly.`
+             : `Your ${data.tool} setup currently appears reasonably optimized based on your selected usage pattern.`
+            }
 
           </p>
 
