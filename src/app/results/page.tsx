@@ -1,8 +1,18 @@
 "use client";
 
-import { useEffect, useState } from "react";
+"use client";
 
+import { useEffect, useState } from "react";
 import { pricing } from "@/lib/pricing";
+
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  ResponsiveContainer,
+} from "recharts";
 
 export default function ResultsPage() {
 
@@ -42,6 +52,17 @@ const currentSpend =
     data.plan === "team" && data.seats <= 2
       ? 20
       : 0;
+
+      const chartData = [
+  {
+    name: "Current",
+    amount: currentSpend,
+  },
+  {
+    name: "Optimized",
+    amount: currentSpend - savings,
+  },
+];
 
   return (
     <main className="min-h-screen bg-black text-white px-6 py-12">
@@ -105,6 +126,38 @@ const currentSpend =
             }
 
           </p>
+
+
+          <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 mt-10">
+
+  <h2 className="text-2xl font-bold mb-6">
+    Spend Comparison
+  </h2>
+
+  <div className="h-80">
+
+    <ResponsiveContainer width="100%" height="100%">
+
+      <BarChart data={chartData}>
+
+        <XAxis dataKey="name" />
+
+        <YAxis />
+
+        <Tooltip />
+
+        <Bar
+          dataKey="amount"
+          radius={[10, 10, 0, 0]}
+        />
+
+      </BarChart>
+
+    </ResponsiveContainer>
+
+  </div>
+
+</div>
 
         </div>
 
