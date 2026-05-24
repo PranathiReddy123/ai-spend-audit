@@ -53,6 +53,13 @@ const currentSpend =
       ? 20
       : 0;
 
+
+      const optimizationScore =
+  savings > 0 ? 62 : 91;
+
+const riskLevel =
+  savings > 0 ? "High Waste" : "Optimized";
+
       const chartData = [
   {
     name: "Current",
@@ -77,7 +84,7 @@ const currentSpend =
           Personalized analysis for your AI stack.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6 mt-10">
+        <div className="grid md:grid-cols-4 gap-6 mt-10">
 
           <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
             <p className="text-gray-400 text-sm">
@@ -108,6 +115,28 @@ const currentSpend =
               ${savings * 12}
             </h2>
           </div>
+
+          <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
+
+  <p className="text-gray-400 text-sm">
+    Optimization Score
+  </p>
+
+  <h2 className="text-4xl font-bold mt-2">
+    {optimizationScore}%
+  </h2>
+
+  <p
+    className={`mt-3 text-sm ${
+      savings > 0
+        ? "text-yellow-400"
+        : "text-green-400"
+    }`}
+  >
+    {riskLevel}
+  </p>
+
+</div>
 
         </div>
 
