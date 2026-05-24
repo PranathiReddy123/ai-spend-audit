@@ -25,3 +25,35 @@ Plan for tomorrow:
 - Add localStorage persistence
 - Expand pricing dataset
 - Improve homepage sections
+
+
+
+
+
+
+
+## Day 2 — 2026-05-24
+
+Hours worked: 6
+
+What I did:
+- Built dynamic audit form flow
+- Added localStorage-based state persistence
+- Implemented pricing engine abstraction
+- Added analytics dashboard cards
+- Integrated spend comparison charts using Recharts
+- Improved landing page UX and navigation
+- Added optimization scoring indicators
+
+What I learned:
+- Dashboard UX and data presentation significantly impact perceived product quality.
+- Structuring pricing logic separately makes the app easier to scale and maintain.
+
+Blockers / what I'm stuck on:
+- Need to improve recommendation sophistication for more realistic enterprise scenarios.
+
+Plan for tomorrow:
+- Improve responsiveness
+- Add animations and polish
+- Expand recommendation engine
+- Finalize documentation and screenshots
