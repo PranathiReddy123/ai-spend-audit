@@ -110,6 +110,34 @@ export default function HomePage() {
 
           </div>
 
+          <div className="mt-24">
+
+  <p className="text-sm uppercase tracking-widest text-gray-500">
+    Trusted Workflow
+  </p>
+
+  <div className="flex flex-wrap gap-4 mt-6">
+
+    <div className="border border-zinc-800 px-5 py-3 rounded-xl text-sm text-gray-300">
+      AI Spend Optimization
+    </div>
+
+    <div className="border border-zinc-800 px-5 py-3 rounded-xl text-sm text-gray-300">
+      SaaS Analytics
+    </div>
+
+    <div className="border border-zinc-800 px-5 py-3 rounded-xl text-sm text-gray-300">
+      Enterprise Cost Insights
+    </div>
+
+    <div className="border border-zinc-800 px-5 py-3 rounded-xl text-sm text-gray-300">
+      Real-Time Recommendations
+    </div>
+
+  </div>
+
+</div>
+
         </div>
 
       </section>
