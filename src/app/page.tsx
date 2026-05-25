@@ -143,6 +143,71 @@ export default function HomePage() {
       </section>
 
 
+      <section className="mt-32">
+
+  <div className="max-w-6xl mx-auto px-6">
+
+    <p className="text-sm uppercase tracking-widest text-gray-500">
+      How It Works
+    </p>
+
+    <div className="grid md:grid-cols-3 gap-6 mt-10">
+
+      <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 hover:border-zinc-600 transition-all duration-300">
+
+        <div className="text-3xl font-bold">
+          01
+        </div>
+
+        <h3 className="text-xl font-semibold mt-6">
+          Input AI Stack
+        </h3>
+
+        <p className="text-gray-400 mt-4">
+          Select your AI tools, pricing plans, and seat counts to begin the audit process.
+        </p>
+
+      </div>
+
+      <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 hover:border-zinc-600 transition-all duration-300">
+
+        <div className="text-3xl font-bold">
+          02
+        </div>
+
+        <h3 className="text-xl font-semibold mt-6">
+          Analyze Spending
+        </h3>
+
+        <p className="text-gray-400 mt-4">
+          Our audit engine evaluates pricing efficiency and identifies unnecessary subscription overhead.
+        </p>
+
+      </div>
+
+      <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 hover:border-zinc-600 transition-all duration-300">
+
+        <div className="text-3xl font-bold">
+          03
+        </div>
+
+        <h3 className="text-xl font-semibold mt-6">
+          Optimize Costs
+        </h3>
+
+        <p className="text-gray-400 mt-4">
+          Receive actionable recommendations, analytics insights, and estimated annual savings opportunities.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
       <footer className="border-t border-zinc-800 mt-24">
 
   <div className="max-w-6xl mx-auto px-6 py-10 text-sm text-gray-500">
