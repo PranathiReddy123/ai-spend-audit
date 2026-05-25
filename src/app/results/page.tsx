@@ -29,12 +29,35 @@ export default function ResultsPage() {
   }, []);
 
   if (!data) {
-    return (
-      <main className="min-h-screen bg-black text-white flex items-center justify-center">
-        Loading...
-      </main>
-    );
-  }
+
+  return (
+
+    <main className="min-h-screen bg-black text-white flex items-center justify-center px-6">
+
+      <div className="text-center">
+
+        <h1 className="text-4xl font-bold">
+          No Audit Data Found
+        </h1>
+
+        <p className="text-gray-400 mt-4 max-w-lg">
+          Please complete an AI spend audit before viewing results.
+        </p>
+
+        <a
+          href="/audit"
+          className="inline-block mt-8 bg-white text-black px-6 py-3 rounded-2xl font-semibold hover:opacity-90 transition-all"
+        >
+          Start Audit
+        </a>
+
+      </div>
+
+    </main>
+
+  );
+
+}
 
 const toolPricing =
   pricing[data.tool as keyof typeof pricing];
@@ -113,6 +136,22 @@ else {
         <p className="text-gray-400 mt-4">
           Personalized analysis for your AI stack.
         </p>
+
+        <div className="flex flex-wrap gap-4 mt-6">
+
+  <div className="bg-zinc-900 border border-zinc-800 px-4 py-2 rounded-xl text-sm text-gray-300">
+    Tool: {data.tool}
+  </div>
+
+  <div className="bg-zinc-900 border border-zinc-800 px-4 py-2 rounded-xl text-sm text-gray-300">
+    Seats: {data.seats}
+  </div>
+
+  <div className="bg-zinc-900 border border-zinc-800 px-4 py-2 rounded-xl text-sm text-gray-300">
+    Audit Generated Successfully
+  </div>
+
+</div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-10">
 
