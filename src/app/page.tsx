@@ -45,7 +45,7 @@ export default function HomePage() {
               AI Cost Optimization Platform
             </p>
 
-            <h1 className="text-7xl font-bold mt-6 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-bold mt-6 leading-tight">
               Stop Overspending on AI Tools
             </h1>
 
@@ -54,7 +54,7 @@ export default function HomePage() {
               and discover cost-saving opportunities in under 60 seconds.
             </p>
 
-            <div className="flex gap-4 mt-10">
+            <div className="flex gap-4 flex-col md:flex-row mt-10">
 
               <Link href="/audit">
                 <button className="bg-white text-black px-8 py-4 rounded-2xl font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300">

@@ -76,7 +76,7 @@ const riskLevel =
 
       <div className="max-w-4xl mx-auto">
 
-        <h1 className="text-5xl font-bold">
+        <h1 className="text-4xl md:text-5xl font-bold">
           Audit Results
         </h1>
 
@@ -84,7 +84,7 @@ const riskLevel =
           Personalized analysis for your AI stack.
         </p>
 
-        <div className="grid md:grid-cols-4 gap-6 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-10">
 
           <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-zinc-600 transition-all duration-300 hover:-translate-y-1">
             <p className="text-gray-400 text-sm">
