@@ -86,7 +86,7 @@ const riskLevel =
 
         <div className="grid md:grid-cols-4 gap-6 mt-10">
 
-          <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
+          <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-zinc-600 transition-all duration-300 hover:-translate-y-1">
             <p className="text-gray-400 text-sm">
               Current Monthly Spend
             </p>
@@ -96,7 +96,7 @@ const riskLevel =
             </h2>
           </div>
 
-          <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
+          <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-zinc-600 transition-all duration-300 hover:-translate-y-1">
             <p className="text-gray-400 text-sm">
               Potential Savings
             </p>
@@ -106,7 +106,7 @@ const riskLevel =
             </h2>
           </div>
 
-          <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
+          <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-zinc-600 transition-all duration-300 hover:-translate-y-1">
             <p className="text-gray-400 text-sm">
               Annual Savings
             </p>
@@ -116,7 +116,7 @@ const riskLevel =
             </h2>
           </div>
 
-          <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6">
+          <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-zinc-600 transition-all duration-300 hover:-translate-y-1">
 
   <p className="text-gray-400 text-sm">
     Optimization Score
@@ -140,7 +140,7 @@ const riskLevel =
 
         </div>
 
-        <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 mt-10">
+        <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 mt-10 hover:border-zinc-600 transition-all duration-300 hover:-translate-y-1">
 
           <h2 className="text-2xl font-bold">
             Recommendation
@@ -157,7 +157,7 @@ const riskLevel =
           </p>
 
 
-          <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 mt-10">
+          <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 mt-10 hover:border-zinc-600 transition-all duration-300 hover:-translate-y-1">
 
   <h2 className="text-2xl font-bold mb-6">
     Spend Comparison

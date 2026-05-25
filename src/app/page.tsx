@@ -57,7 +57,7 @@ export default function HomePage() {
             <div className="flex gap-4 mt-10">
 
               <Link href="/audit">
-                <button className="bg-white text-black px-8 py-4 rounded-2xl font-semibold hover:opacity-90">
+                <button className="bg-white text-black px-8 py-4 rounded-2xl font-semibold hover:opacity-90 hover:scale-105 transition-all duration-300">
                   Start Free Audit
                 </button>
               </Link>
@@ -72,7 +72,7 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-3 gap-6 mt-24">
 
-            <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8">
+            <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 hover:border-zinc-600 transition-all duration-300 hover:-translate-y-1">
 
               <h2 className="text-4xl font-bold">
                 32%
@@ -84,7 +84,7 @@ export default function HomePage() {
 
             </div>
 
-            <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8">
+            <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 hover:border-zinc-600 transition-all duration-300 hover:-translate-y-1">
 
               <h2 className="text-4xl font-bold">
                 10k+
@@ -96,7 +96,7 @@ export default function HomePage() {
 
             </div>
 
-            <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8">
+            <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 hover:border-zinc-600 transition-all duration-300 hover:-translate-y-1">
 
               <h2 className="text-4xl font-bold">
                 $2.4M
