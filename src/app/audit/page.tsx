@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 export default function AuditPage() {
@@ -10,6 +10,7 @@ export default function AuditPage() {
   const [tool, setTool] = useState("chatgpt");
   const [plan, setPlan] = useState("plus");
   const [seats, setSeats] = useState(1);
+  const [loading, setLoading] = useState(false);
 
   return (
     <main className="min-h-screen bg-black text-white px-6 py-12">
@@ -71,17 +72,34 @@ export default function AuditPage() {
             />
           </div>
 
-          <button onClick={() => {
-            const auditData = {tool,plan,seats,};
-            localStorage.setItem("auditData",JSON.stringify(auditData));
-            router.push("/results");
-          
-          }}
-          
-          className="w-full bg-white text-black py-4 rounded-xl font-semibold hover:opacity-90">
-            Generate Audit
-            
-          </button>
+
+          <button
+  onClick={() => {
+
+    setLoading(true);
+
+    localStorage.setItem(
+      "auditData",
+      JSON.stringify({
+        tool,
+        plan,
+        seats,
+      })
+    );
+
+    setTimeout(() => {
+      window.location.href = "/results";
+    }, 1800);
+
+  }}
+  className="w-full bg-white text-black py-4 rounded-2xl font-semibold mt-8 hover:opacity-90 hover:scale-[1.01] transition-all duration-300"
+>
+
+  {loading
+    ? "Analyzing AI Spend..."
+    : "Generate Audit"}
+
+</button>
 
           
 
