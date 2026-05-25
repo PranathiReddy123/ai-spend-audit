@@ -60,6 +60,36 @@ const currentSpend =
 const riskLevel =
   savings > 0 ? "High Waste" : "Optimized";
 
+  let recommendation = "";
+
+if (data.tool === "chatgpt" && data.seats <= 2) {
+
+  recommendation =
+    "Smaller teams may not fully benefit from ChatGPT Team pricing. Consolidating into Plus plans could reduce monthly spend while preserving core functionality.";
+
+}
+
+else if (data.tool === "cursor" && data.seats >= 10) {
+
+  recommendation =
+    "Larger engineering teams using Cursor may benefit from centralized enterprise license management and shared AI policy controls.";
+
+}
+
+else if (data.tool === "claude") {
+
+  recommendation =
+    "Claude usage patterns typically benefit from prompt workflow optimization and selective seat allocation for research-heavy roles.";
+
+}
+
+else {
+
+  recommendation =
+    "Your current AI tooling configuration appears reasonably optimized based on the selected usage profile.";
+
+}
+
       const chartData = [
   {
     name: "Current",
@@ -148,11 +178,8 @@ const riskLevel =
 
           <p className="text-gray-300 mt-4 leading-relaxed">
 
-            {savings > 0
+            {recommendation}
 
-             ? `Your ${data.tool} configuration appears over-provisioned for your current seat count. Downgrading plans or consolidating licenses could reduce spend significantly.`
-             : `Your ${data.tool} setup currently appears reasonably optimized based on your selected usage pattern.`
-            }
 
           </p>
 
