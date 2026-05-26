@@ -207,6 +207,66 @@ export default function HomePage() {
 
 </section>
 
+<section className="mt-32">
+
+  <div className="max-w-6xl mx-auto px-6">
+
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+      <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 text-center">
+
+        <h2 className="text-4xl font-bold">
+          94%
+        </h2>
+
+        <p className="text-gray-400 mt-3 text-sm">
+          Audit Completion Rate
+        </p>
+
+      </div>
+
+      <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 text-center">
+
+        <h2 className="text-4xl font-bold">
+          $18k
+        </h2>
+
+        <p className="text-gray-400 mt-3 text-sm">
+          Avg Annual Savings
+        </p>
+
+      </div>
+
+      <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 text-center">
+
+        <h2 className="text-4xl font-bold">
+          10k+
+        </h2>
+
+        <p className="text-gray-400 mt-3 text-sm">
+          Audits Simulated
+        </p>
+
+      </div>
+
+      <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 text-center">
+
+        <h2 className="text-4xl font-bold">
+          32%
+        </h2>
+
+        <p className="text-gray-400 mt-3 text-sm">
+          Avg Spend Reduction
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
 
       <footer className="border-t border-zinc-800 mt-24">
 
