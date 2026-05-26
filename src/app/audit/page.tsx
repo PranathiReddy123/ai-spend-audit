@@ -96,7 +96,7 @@ export default function AuditPage() {
 >
 
   {loading
-    ? "Analyzing AI Spend •••"
+    ? "Analyzing AI Spend ⏳"
     : "Generate Audit"}
 
 </button>
