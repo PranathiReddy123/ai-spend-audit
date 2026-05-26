@@ -133,6 +133,9 @@ else {
           Audit Results
         </h1>
 
+        <p className="text-green-400 mt-3 text-sm">
+  AI audit completed successfully</p>
+
         <p className="text-gray-400 mt-4">
           Personalized analysis for your AI stack.
         </p>
