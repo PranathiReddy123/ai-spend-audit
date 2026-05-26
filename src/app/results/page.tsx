@@ -242,7 +242,13 @@ else {
 
         <YAxis />
 
-        <Tooltip />
+        <Tooltip
+  contentStyle={{
+    backgroundColor: "#18181b",
+    border: "1px solid #27272a",
+    color: "white",
+  }}
+/>
 
         <Bar
           dataKey="amount"
