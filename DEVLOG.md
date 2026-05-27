@@ -85,3 +85,54 @@ Plan for tomorrow:
 - Capture screenshots
 - Prepare final submission package
 - Polish remaining UI inconsistencies
+
+
+## Day 4 — 2026-05-26
+
+Hours worked: 3
+
+What I did:
+- Improved dashboard responsiveness
+- Added homepage credibility metrics section
+- Refined chart tooltip styling
+- Tested layouts across desktop and mobile views
+- Captured project screenshots for documentation
+
+What I learned:
+- Small visual polish changes significantly improve perceived SaaS quality.
+- Mobile responsiveness requires continuous iteration and testing.
+
+Blockers / what I'm stuck on:
+- Still evaluating which advanced backend features are most valuable before submission.
+
+Plan for tomorrow:
+- Finalize documentation
+- Expand testing notes
+- Add pricing verification references
+- Review repository structure
+
+## Day 5 — 2026-05-27
+
+Hours worked: 4
+
+What I did:
+- Completed architecture documentation
+- Added pricing source references
+- Added AI prompt engineering notes
+- Expanded testing documentation
+- Added detailed reflection notes
+- Finalized screenshots and deployment polish
+
+What I learned:
+- Strong documentation improves engineering credibility significantly.
+- Product-oriented thinking is just as important as frontend implementation quality.
+
+Blockers / what I'm stuck on:
+- Need to decide which advanced features are most valuable before the final deadline.
+
+Final Status:
+- Repository finalized
+- Deployment verified
+- Documentation completed
+- Screenshots captured
+- Submission-ready MVP completed
