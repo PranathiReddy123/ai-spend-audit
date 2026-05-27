@@ -92,3 +92,61 @@ Built as part of a product engineering internship assignment focused on:
 - UX quality
 - SaaS dashboard design
 - deployment workflows
+
+
+---
+
+# Decisions & Trade-offs
+
+## 1. Client-side Persistence Instead of Backend Storage
+
+For the MVP, I chose localStorage persistence instead of full backend storage to prioritize rapid iteration and a frictionless no-login experience.
+
+Trade-off:
+- simpler architecture
+- less infrastructure complexity
+- no permanent audit history
+
+---
+
+## 2. Rule-based Audit Logic Instead of Full AI Reasoning
+
+The audit calculations use deterministic pricing and recommendation rules rather than relying entirely on LLM-generated reasoning.
+
+Trade-off:
+- more predictable outputs
+- easier debugging
+- less flexible personalization
+
+---
+
+## 3. Dashboard-first UX Design
+
+I prioritized dashboard clarity and large visual metrics over dense financial reporting.
+
+Trade-off:
+- easier readability
+- better shareability
+- reduced depth for advanced enterprise analysis
+
+---
+
+## 4. Frontend-focused MVP Scope
+
+I intentionally focused more heavily on frontend UX polish and product presentation before implementing advanced backend systems.
+
+Trade-off:
+- stronger product feel
+- faster iteration
+- limited persistence and collaboration features
+
+---
+
+## 5. Simplified Pricing Model
+
+The pricing engine currently uses simplified pricing assumptions for some enterprise plans where exact public pricing is unavailable.
+
+Trade-off:
+- easier MVP implementation
+- realistic approximation behavior
+- less precision for enterprise-scale audits
